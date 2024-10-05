@@ -1,0 +1,8 @@
+.pincode::-webkit-outer-spin-button,
+.pincode::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+div>h1,.grid{
+  font-family: "Roboto", sans-serif;
+}

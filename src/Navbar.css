@@ -1,0 +1,32 @@
+body{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.secondNav li {
+    color: black;
+    position: relative;
+}
+
+.secondNav li:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 20px;
+    left: 50%;
+    position: absolute;
+    background: #a73f29;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.secondNav li:hover:after {
+    width: 100%;
+    left: 0;
+}
+div>h1{
+    font-family: "Playfair Display", serif;
+}
