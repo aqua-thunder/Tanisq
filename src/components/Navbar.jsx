@@ -44,14 +44,13 @@ const Navbar = ({ count }) => {
     }
 
     return (
-        <>
-
+        <div id='navbar'>
             <div className="bg-[#f2e9e9] px-28 sticky top-0 z-10">
                 <Filter />
                 <div className='py-3 flex items-center justify-center space-x-10 '>
                     <img className='w-20 cursor-pointer' src="../images/logo.svg" alt="" />
-                    <div className='flex  bg-white rounded-sm px-2 h-10'>
-                        <input type="text" name="" className=' w-[45vw] pl-3 outline-none' id="" placeholder='Search for Gold Jewellery, Diamond Jewellery and more…' />
+                    <div className='flex  bg-white rounded-sm px-2 h-10' id="search">
+                        <input type="text" className=' w-[45vw] pl-3 outline-none'  placeholder='Search for Gold Jewellery, Diamond Jewellery and more…' />
                         <div className='flex space-x-3 cursor-pointer px-2'>
                             <img className='w-6' src="../images/camera-com.svg" alt="" />
                             <img className='w-5' src="../images/microphone-com.svg" alt="" />
@@ -59,7 +58,7 @@ const Navbar = ({ count }) => {
                         </div>
 
                     </div>
-                    <div className='flex space-x-10'>
+                    <div className='flex space-x-10' >
                         <div className='flex flex-col justify-center items-center cursor-pointer '>
                             <img className='w-6 ' src="../images/diemond.svg" alt="" />
                             <span className='text-[13px] text-[#a73f29] hover:text-[14px] hover:font-semibold transition-all'>DIAMOND</span>
@@ -91,7 +90,7 @@ const Navbar = ({ count }) => {
             </div>
 
 
-            <div className="secondNav px-16   pt-5 ">
+            <div className="secondNav px-16 pt-5 " id='second-navigation'>
                 <ul className='flex justify-evenly cursor-pointer text-sm '>
                     <Link to="/"> <li className='hover:text-lg transition-all' onMouseOver={JwelleryTable}><div onMouseOut={JwelleryTableClose}>All JEWELLERY</div></li></Link>
                     <li className='hover:text-lg transition-all'><a href="">GOLD</a></li>
@@ -184,7 +183,7 @@ const Navbar = ({ count }) => {
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
 

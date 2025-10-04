@@ -15,14 +15,12 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
 
 
     return (
-        <>
-
+        <div id='product-detail'>
             {
                 Info?.map((productItem, productIndex) => {
                     return (
-                        <div className='px-28' key={productItem.id}>
-
-                            <div className=' pt-10 flex'>
+                        <div className='px-28' key={productItem.id} id='main-div'>
+                            <div className=' pt-10 flex' id='grid'>
                                 <div className=' w-[50vw] '>
                                     <div className='space-x-2'>
                                         <Link to="/"><span className='text-gray-700'>Home</span></Link>
@@ -31,18 +29,18 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                                         <span className='text-gray-700'>|</span>
                                         <span className='text-[#832729] font-semibold'>{productItem.name}</span>
                                     </div>
-                                    <div className='flex items-center mt-16 space-x-32'>
-                                        <div className='space-y-10'>
+                                    <div className='flex items-center mt-16 space-x-32' id='product-images'>
+                                        <div className='space-y-10 sub-img'>
                                             <img className='w-[7rem]' src={productItem.url} alt="" />
-                                            <img className='' src={productItem.url1} alt="" />
-                                            <img className='' src={productItem.url2} alt="" />
+                                            <img className='w-[7rem]' src={productItem.url1} alt="" />
+                                            <img className='w-[7rem]'  src={productItem.url2} alt="" />
                                         </div>
                                         <div className='flex flex-col items-end justify-center'>
-                                            <img className='w-[24rem]' src={productItem.url} alt="" />
+                                            <img className='w-[24rem]' src={productItem.url} alt="" id='main-img'/>
                                             <button className='mt-3 border px-8 rounded-md py-'>Try it On</button>
                                         </div>
                                     </div>
-                                    <div className=" bg-[#fff1d6] w-[40vw] flex justify-between p-5 mt-7">
+                                    <div className=" bg-[#fff1d6] w-[40vw] flex justify-between p-5 mt-7" id='term-condition'>
                                         <div className="">
                                             <img src="../images/Exchange.jpg" alt="Exchange Festival" />
                                             <a href="https://www.tanishq.co.in/exchange-terms-and-conditions.html?lang=en_IN" className='text-[10px] text-[#76500d] underline' >Terms &amp; Conditions Apply</a>
@@ -103,9 +101,9 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                                     <div className='mt-5 space-y-5'>
                                         <div className='font-semibold text-sm'>Gold Purity: {productItem.GoldPurity} Karat</div>
                                         <div className='text-gray-500 text-sm'>Not sure what to buy? Check out our <span className='hover:underline text-[#832729] font-semibold'>Buying Guides</span></div>
-                                        <div className='flex justify-between'>
-                                            <button className='py-3 px-20 text-lg rounded-md font-bold  border border-black' onClick={() => { addToCart(productItem), saveTLS() }} >Add to Cart</button>
-                                            <button className='py-3 px-20 text-lg rounded-md font-bold text-white bg-[#832729]'>Buy Now</button>
+                                        <div className='flex justify-between btn'>
+                                            <button className='py-3 px-20 text-lg rounded-md font-bold  border border-black ' onClick={() => { addToCart(productItem), saveTLS() }} >Add to Cart</button>
+                                            <button className='py-3 px-20 text-lg rounded-md font-bold text-white bg-[#832729] '>Buy Now</button>
                                         </div>
                                     </div>
                                     <div className="line w-[100%] h-[1px] bg-[#832729] mt-12"></div>
@@ -139,7 +137,7 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
 
                                 </div>
                             </div>
-                            <div className='flex mt-10'>
+                            <div className='flex mt-10' id='detail'>
                                 <div className='w-[50vw]'>
                                     <h1 className='font-bold text-2xl' >Product Details</h1>
                                     <div className='font-semibold mt-5 '>Specification</div>
@@ -167,7 +165,7 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                                     </div>
                                 </div>
                                 <div className='w-[35vw]'>
-                                    <img className='w-96' src={productItem.url} alt="" />
+                                    <img className='w-96' src={productItem.url} alt="" id='main-img'/>
                                 </div>
                             </div>
                             <div>
@@ -230,7 +228,7 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                 <img src="../Product Images/Poster.jpg" alt="" />
             </div>
 
-        </>
+        </div>
     )
 }
 

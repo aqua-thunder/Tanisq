@@ -30,3 +30,16 @@ body{
 div>h1{
     font-family: "Playfair Display", serif;
 }
+
+
+@media (max-width: 800px) {
+  #second-navigation{
+    display: none;
+  }
+  #navbar{
+    width: 185vw;
+  }
+  #search{
+    display: none;
+  }
+} 

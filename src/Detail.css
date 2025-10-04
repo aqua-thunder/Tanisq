@@ -3,6 +3,51 @@
   -webkit-appearance: none;
   margin: 0;
 }
-div>h1,.grid{
+
+div>h1,
+.grid {
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 900px) {
+  #product-detail {
+    width: 186vw;
+  }
+  #main-div {
+    padding: 10px 30px;
+  }
+  #product-images{
+    display: block;
+    margin-top: 10px;
+  }
+  #main-img{
+    max-width: 60vw;
+  }
+  .sub-img{
+    display: none;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+  }
+  #grid>div{
+    width: 83vw;
+  }
+  #term-condition{
+    width: 85vw;
+    font-size: small;
+  }
+  .btn{
+    /* padding: 3px 5px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #detail{
+    width: 186vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  };
+
 }

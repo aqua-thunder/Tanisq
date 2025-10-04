@@ -11,7 +11,7 @@ const Filter = (props) => {
         element.style.transition = props.transition
     }
     const FilterClose = () => {
-        const element = document.getElementById('Filter')
+        const element = document.getElementById('Filter') 
         const home = document.getElementById('home')
         if (element) {
             element.style.width = "0vw"

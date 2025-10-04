@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
             <div className="line bg-black h-[2px] w-[82vw]  mt-14"></div>
             <div className="flex justify-between items-center  mt-10">
-                <div className='flex gap-5'>
+                <div className='flex gap-5' id='contact'>
                     <img className='w-16' src="./images/visa-com.svg" alt="" />
                     <img className='w-16' src="./images/paypal-com.svg" alt="" />
                     <img className='w-16' src="./images/visa-com.svg" alt="" />
@@ -63,7 +63,7 @@ const Footer = () => {
 
             </div>
         </div>
-    )
+    ) 
 }
 
 export default Footer

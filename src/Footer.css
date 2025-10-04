@@ -2,3 +2,18 @@ ul{
     font-family: "Roboto", sans-serif;
     /* font-family: "Merienda", cursive;       */
 }
+
+@media (max-width: 800px) {
+    #footer{
+        width: 186vw;
+    }   
+    #footer>div{
+                display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10vw;
+
+    } 
+    #contact{
+        display: none;
+    } 
+}

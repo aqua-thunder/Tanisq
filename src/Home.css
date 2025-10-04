@@ -1,13 +1,28 @@
-.grid{
-    font-family: "Merienda", cursive;   
-    
+.grid {
+    font-family: "Merienda", cursive;
+
 }
-.load{
+
+.load {
     font-family: "Playfair Display", serif;
 
 }
-.Assurance{
+
+.Assurance {
     font-family: "Playfair Display", serif;
 
 
+}
+
+@media (max-width: 800px) {
+    #home {
+        width: 186vw;
+        padding: 28px 30px 28px 30px;
+    }
+
+    #all-jewellery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 9;
+    }
 }

@@ -22,7 +22,7 @@ const Home = ({ product, productDetail }, props) => {
     }
     if (props.home) {
         const home = document.getElementById('home')
-        home.style.filter = props.filter
+        home.style.filter = props.filter 
             
     }
     const ShortBy = () => {
@@ -43,9 +43,7 @@ const Home = ({ product, productDetail }, props) => {
         }
     }
 
-
-
-    return (
+    return ( 
         <>
             <div className='px-28 pt-10 space-y-5' id='home'>
                 <div className='flex items-center space-x-3'>
@@ -71,12 +69,12 @@ const Home = ({ product, productDetail }, props) => {
                 </div>
 
 
-                <div className='grid grid-cols-3 gap-8'>
+                <div className='grid grid-cols-3 gap-8' id='all-jewellery'>
                     {
                         product.map((productItem, productIndex) => {
                             return (
                                 <div className='space-y-5 relative cursor-pointer' onClick={() => { productDetail(productItem) }} key={productIndex}>
-                                    <Link to="/detail"><img src={productItem.url} className='rounded-lg' alt="" /></Link>
+                                    <Link to="/detail"><img src={productItem.url} className='rounded-lg' alt="product img" /></Link>
                                     <img className='w-5 absolute top-0 right-5 ' src="/images/heart-com.svg" alt="" />
                                     <div className='px-3 text-[20px]'>
                                         <div>{productItem.name}</div>
