@@ -11,9 +11,9 @@ import { createBrowserRouter, json, RouterProvider } from 'react-router-dom'
 function App() {
   const [product, setProduct] = useState([
     {
-      url: '../Product Images/img1.jpg',
-      url1: '../Product Images/img1.1.jpg',
-      url2: '../Product Images/img1.2.jpg',
+      url: '/Product Images/img1.jpg',
+      url1: '/Product Images/img1.1.jpg',
+      url2: '/Product Images/img1.2.jpg',
       name: "Bold Geometric Diamond Ring",
       about: "Make your mark everyday when you adorn this contemporary ring crafted in 18 karat rose gold, studded with diamonds",
       GrossWeight: 1.996,
@@ -31,9 +31,9 @@ function App() {
 
     },
     {
-      url: '../Product Images/img2.jpg',
-      url1: '../Product Images/img2.2.jpg',
-      url2: '../Product Images/img2.3.jpg',
+      url: '/Product Images/img2.jpg',
+      url1: '/Product Images/img2.2.jpg',
+      url2: '/Product Images/img2.3.jpg',
       name: "Graceful Charm Floral Ring",
       about: "Grace yourself with a touch of refined uniqueness and enduring elegance through this floral ring crafted in 18 karat yellow gold.",
       GrossWeight: 3.151,
@@ -50,9 +50,9 @@ function App() {
 
     },
     {
-      url: '../Product Images/img3.jpg',
-      url1: '../Product Images/img3.1.jpg',
-      url2: '../Product Images/img3.2.jpg',
+      url: '/Product Images/img3.jpg',
+      url1: '/Product Images/img3.1.jpg',
+      url2: '/Product Images/img3.2.jpg',
       name: "Sublime Crossover Diamond Ring",
       about: "Turn your daily outfits into sublime ensembles with this contemporary diamond ring crafted in 18 karat rose gold with a high polish finish.",
       GrossWeight: 2.309,
@@ -68,8 +68,8 @@ function App() {
       discount: 2545.13
     },
     {
-      url: '../Product Images/img4.jpg',
-      url1: '../Product Images/img4.1.jpg',
+      url: '/Product Images/img4.jpg',
+      url1: '/Product Images/img4.1.jpg',
       name: "Chic Dual Tone Diamond Ring",
       about: "2 gram 22 Karat Gold Coin with Guru Nanak Design",
       GrossWeight: 2.309,
@@ -83,8 +83,8 @@ function App() {
       discount: 3795.25
     },
     {
-      url: '../Product Images/img5.jpg',
-      url1: '../Product Images/img5.1.jpg',
+      url: '/Product Images/img5.jpg',
+      url1: '/Product Images/img5.1.jpg',
       name: "Charming Jali Stud Earrings",
       about: "Grace yourself with a touch of refined uniqueness and enduring elegance through this floral ring crafted in 18 karat yellow gold.",
       GrossWeight: 3.151,
@@ -100,8 +100,8 @@ function App() {
       discount: 6154.45
     },
     {
-      url: '../Product Images/img6.jpg',
-      url1: '../Product Images/img6.1.jpg',
+      url: '/Product Images/img6.jpg',
+      url1: '/Product Images/img6.1.jpg',
       url2: '../Product Images/img6.2.jpg',
       name: "Starry Dual Tone Diamond Stud Earrings",
       about: "Make your mark everyday when you adorn this contemporary ring crafted in 18 karat rose gold, studded with diamonds",
@@ -118,9 +118,9 @@ function App() {
       discount: 2545.13
     },
     {
-      url: '../Product Images/img7.jpg',
-      url1: '../Product Images/img7.1.jpg',
-      url2: '../Product Images/img7.2.jpg',
+      url: '/Product Images/img7.jpg',
+      url1: '/Product Images/img7.1.jpg',
+      url2: '/Product Images/img7.2.jpg',
       name: "Sharp Stacked Diamond Ring",
       about: "Add radiant allure to your ensembles with this uniquely designed ring crafted in 18 karat yellow gold, with modern polki",
       GrossWeight: 3.29,
@@ -136,9 +136,9 @@ function App() {
       discount: 4910.47
     },
     {
-      url: '../Product Images/img8.jpg',
-      url1: '../Product Images/img8.1.jpg',
-      url2: '../Product Images/img8.2.jpg',
+      url: '/Product Images/img8.jpg',
+      url1: '/Product Images/img8.1.jpg',
+      url2: '/Product Images/img8.2.jpg',
       name: "Exquisite Dome Ring",
       about: "Pretty pink stone nestles in a teardrop pattern hoisted by scintillating diamonds making this lovely ring, that will make every head turn!",
       GrossWeight: 2.982,
@@ -155,9 +155,9 @@ function App() {
 
     },
     {
-      url: '../Product Images/img9.jpg',
-      url1: '../Product Images/img9.1.jpg',
-      url2: '../Product Images/img9.2.jpg',
+      url: '/Product Images/img9.jpg',
+      url1: '/Product Images/img9.1.jpg',
+      url2: '/Product Images/img9.2.jpg',
       name: "Contemporary Crossover Diamond Ring",
       about: "Turn your daily outfits into sublime ensembles with this contemporary diamond ring crafted in 18 karat rose gold with a high polish finish.",
       GrossWeight: 2.309,
@@ -174,9 +174,9 @@ function App() {
 
     },
     {
-      url: '../Product Images/img10.jpg',
-      url1: '../Product Images/img10.1.jpg',
-      url2: '../Product Images/img10.2.jpg',
+      url: '/Product Images/img10.jpg',
+      url1: '/Product Images/img10.1.jpg',
+      url2: '/Product Images/img10.2.jpg',
       name: "Modern Beauty Diamond Drop Earrings",
       about: "Make your mark everyday when you adorn this contemporary ring crafted in 18 karat rose gold, studded with diamonds",
       GrossWeight: 1.996,

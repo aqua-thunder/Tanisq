@@ -10,6 +10,7 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
 
     useEffect(() => {
         setInfo(ProductInfo)
+        console.log(Info)
     }, [ProductInfo])
 
 

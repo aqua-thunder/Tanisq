@@ -8,7 +8,7 @@ const Home = ({ product, productDetail }, props) => {
     const Filter = () => {
         const home = document.getElementById('home')
         home.style.filter = "blur(8px)"
-        home.style.overflow = "hidden"
+        home.style.overflow = "hidden" 
 
         const element = document.getElementById('Filter')
         if (element) {
@@ -23,14 +23,14 @@ const Home = ({ product, productDetail }, props) => {
     if (props.home) {
         const home = document.getElementById('home')
         home.style.filter = props.filter
-        home.style.position = props.position
+            
     }
     const ShortBy = () => {
         const short = document.getElementById('short')
         if (short) {
             short.style.width = "25vw",
                 short.style.minHeight = "45vh"
-            home.style.filter = "blur(8px)"
+            short.style.filter = "blur(8px)"
             short.style.filter = "blur(0px)"
         }
     }
@@ -39,7 +39,7 @@ const Home = ({ product, productDetail }, props) => {
         if (short) {
             short.style.width = "0vw",
                 short.style.minHeight = "0vh"
-            home.style.filter = "none"
+            short.style.filter = "none"
         }
     }
 

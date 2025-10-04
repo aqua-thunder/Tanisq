@@ -144,7 +144,7 @@ const Navbar = ({ count }) => {
                     </ul>
                 </div>
             </div>
-            <div onMouseOver={EaringsTable} onMouseOut={EaringsTableClose} className=' bg-white shadow-md shadow-[#772022]   w-0 h-0 top-40 left-96 overflow-x-hidden fixed z-10 rounded-md' id='EARRINGS'>
+            <div onMouseOver={EaringsTable} onMouseOut={EaringsTableClose} className=' bg-white shadow-md shadow-[#772022] w-0 h-0 top-40 left-96 overflow-x-hidden fixed z-10 rounded-md' id='EARRINGS'>
                 <div className="grid grid-cols-5 ">
                     <ul className='space-y-3 text-sm'>
                         <li className='text-[#772022] font-semibold'>CATEGORY</li>
