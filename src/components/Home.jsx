@@ -50,7 +50,7 @@ const Home = ({ product, productDetail }, props) => {
             <div className='px-28 pt-10 space-y-5' id='home'>
                 <div className='flex items-center space-x-3'>
                     <Link to="/"><span>Home </span></Link>
-                    <span><img className='w-5' src="../images/greaterthan-svgrepo-com.svg" alt="" /></span>
+                    <span><img className='w-5' src="/images/greaterthan-svgrepo-com.svg" alt="" /></span>
                     <span className='text-[#a73f29] font-semibold'> All Jewellery</span>
                 </div>
                 <div className='flex items-center  space-x-3'>
@@ -59,14 +59,14 @@ const Home = ({ product, productDetail }, props) => {
                 </div>
                 <div className='flex justify-between'>
                     <button onClick={Filter} className='flex  space-x-3 items-center border border-gray-300 py-2 px-7 rounded-full'>
-                        <img className='w-5' src="../images/filter-com.svg" alt="" />
+                        <img className='w-5' src="/images/filter-com.svg" alt="" />
                         <span>Filter</span>
-                        <img className='w-4 h-3' src="../images/down-com.svg" alt="" />
+                        <img className='w-4 h-3' src="/images/down-com.svg" alt="" />
                     </button>
                     <button onClick={ShortBy} className='flex  space-x-3 items-center border border-gray-300 py-2 px-7 rounded-full'>
                         <span>Short by : </span>
                         <span className='font-semibold'>Price : Low To High</span>
-                        <img className='w-4 h-3' src="../images/down-com.svg" alt="" />
+                        <img className='w-4 h-3' src="/images/down-com.svg" alt="" />
                     </button>
                 </div>
 
@@ -77,7 +77,7 @@ const Home = ({ product, productDetail }, props) => {
                             return (
                                 <div className='space-y-5 relative cursor-pointer' onClick={() => { productDetail(productItem) }} key={productIndex}>
                                     <Link to="/detail"><img src={productItem.url} className='rounded-lg' alt="" /></Link>
-                                    <img className='w-5 absolute top-0 right-5 ' src="../images/heart-com.svg" alt="" />
+                                    <img className='w-5 absolute top-0 right-5 ' src="/images/heart-com.svg" alt="" />
                                     <div className='px-3 text-[20px]'>
                                         <div>{productItem.name}</div>
                                         <div className='flex space-x-5'>
@@ -97,7 +97,7 @@ const Home = ({ product, productDetail }, props) => {
 
                 <div className='Assurance relative pt-16 '>
 
-                    <img className='' src="../Product Images/backGroundImg.jpg" alt="" />
+                    <img className='' src="/Product Images/backGroundImg.jpg" alt="" />
                     <div className='absolute top-[25%] w-[100%] text-center  space-y-16'>
                         <div>
                             <h1 className='text-5xl '>The Tanishq Assurance</h1>
@@ -105,19 +105,19 @@ const Home = ({ product, productDetail }, props) => {
                         </div>
                         <div className='flex items-center justify-evenly'>
                             <div className='text-2xl'>
-                                <img src="../images/Exchange.jpg" alt="" />
+                                <img src="/images/Exchange.jpg" alt="" />
                                 <div className='mt-2'>Tanishq</div> <div>Exchange</div>
                             </div>
                             <div className='text-2xl '>
-                                <img src="../images/Guarantee.jpg" alt="" />
+                                <img src="/images/Guarantee.jpg" alt="" />
                                 <div className='mt-2'>Purity</div> <div>Guarantee</div>
                             </div>
                             <div className='text-2xl '>
-                                <img src="../images/Replacement.jpg" alt="" />
+                                <img src="/images/Replacement.jpg" alt="" />
                                 <div className='mt-5'>Easy</div> <div>Replacements</div>
                             </div>
                             <div className='text-2xl '>
-                                <img src="../images/Maintainence.jpg" alt="" />
+                                <img src="/images/Maintainence.jpg" alt="" />
                                 <div className='mt-2'>Lifetime</div> <div>Maintenance</div>
                             </div>
                         </div>
@@ -128,7 +128,7 @@ const Home = ({ product, productDetail }, props) => {
                 <div className='p-5'>
                     <div className='flex justify-between'>
                         <h1 className='text-xl'>Short By</h1>
-                        <img onClick={closeShortBy} className='invert w-5 cursor-pointer' src="../images/cross.svg" alt="" />
+                        <img onClick={closeShortBy} className='invert w-5 cursor-pointer' src="/images/cross.svg" alt="" />
                     </div>
                     <ul className='border border-gray-400 space-y-4 font-semibold text-sm p-3 rounded-xl mt-3 cursor-pointer'>
                         <li>Best Sellers</li>
