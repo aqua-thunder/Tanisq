@@ -8,12 +8,12 @@ const Home = ({ product, productDetail }, props) => {
     const Filter = () => {
         const home = document.getElementById('home')
         home.style.filter = "blur(8px)"
-        home.style.overflow = "hidden" 
+        home.style.overflow = "hidden"
 
         const element = document.getElementById('Filter')
         if (element) {
             setFilterBy(
-                element.style.width = "25vw",
+                element.style.width = "78vw",
                 element.style.minHeight = "100%",
                 element.style.transition = "0.3s"
             )
@@ -22,13 +22,13 @@ const Home = ({ product, productDetail }, props) => {
     }
     if (props.home) {
         const home = document.getElementById('home')
-        home.style.filter = props.filter 
-            
+        home.style.filter = props.filter
+
     }
     const ShortBy = () => {
         const short = document.getElementById('short')
         if (short) {
-            short.style.width = "25vw",
+            short.style.width = "75vw",
                 short.style.minHeight = "45vh"
             short.style.filter = "blur(8px)"
             short.style.filter = "blur(0px)"
@@ -43,7 +43,7 @@ const Home = ({ product, productDetail }, props) => {
         }
     }
 
-    return ( 
+    return (
         <>
             <div className='px-28 pt-10 space-y-5' id='home'>
                 <div className='flex items-center space-x-3'>
@@ -52,7 +52,7 @@ const Home = ({ product, productDetail }, props) => {
                     <span className='text-[#a73f29] font-semibold'> All Jewellery</span>
                 </div>
                 <div className='flex items-center  space-x-3'>
-                    <h1 className='text-[2vw] '>All Jewellery</h1>
+                    <h1 className='text-[2vw] ' id='text-lg' >All Jewellery</h1>
                     <span className='text-lg text-gray-600'>(22993 results)</span>
                 </div>
                 <div className='flex justify-between'>

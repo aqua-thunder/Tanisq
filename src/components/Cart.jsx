@@ -33,6 +33,7 @@ const Cart = ({ AddCart, saveTLS }) => {
             <button className='bg-[#832729] text-white px-6 rounded-md py-3'>Check</button>
           </div>
         </div>
+    
         <div className='flex items-center mt-6 space-x-5'>
           <img className='w-10' src="../Images/cart.webp" alt="" />
           <span>You have one reward waiting for you! <span className='text-blue-500'> Claim Now</span></span>
@@ -131,6 +132,7 @@ const Cart = ({ AddCart, saveTLS }) => {
       </div>
 
     </div>
+
   )
 }
 

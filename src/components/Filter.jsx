@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Filter.css'
 import Home from './Home'
-import { useState } from 'react'
+import { useState } from 'react' 
 const Filter = (props) => {
     const [blur, setblur] = useState()
     if (props.element) {
@@ -62,7 +62,6 @@ const Filter = (props) => {
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
     )

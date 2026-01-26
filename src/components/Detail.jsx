@@ -21,8 +21,8 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                     return (
                         <div className='px-28' key={productItem.id} id='main-div'>
                             <div className=' pt-10 flex' id='grid'>
-                                <div className=' w-[50vw] '>
-                                    <div className='space-x-2'>
+                                <div className=' w-[50vw]' id='w-full'>
+                                    <div className='space-x-2 fontsize'>
                                         <Link to="/"><span className='text-gray-700'>Home</span></Link>
                                         <span className='text-gray-700'>|</span>
                                         <span className='text-gray-700'>Product</span>
@@ -36,7 +36,7 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                                             <img className='w-[7rem]'  src={productItem.url2} alt="" />
                                         </div>
                                         <div className='flex flex-col items-end justify-center'>
-                                            <img className='w-[24rem]' src={productItem.url} alt="" id='main-img'/>
+                                            <img className='w-[24rem] main-img' src={productItem.url} alt="" />
                                             <button className='mt-3 border px-8 rounded-md py-'>Try it On</button>
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className=' w-[35vw]'>
+                                <div className=' w-[35vw]' id='w-full'>
                                     <div className='flex justify-between'>
                                         <div className='font-bold text-2xl'>{productItem.name}</div>
                                         <div className='flex space-x-3'>
@@ -141,7 +141,7 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                                 <div className='w-[50vw]'>
                                     <h1 className='font-bold text-2xl' >Product Details</h1>
                                     <div className='font-semibold mt-5 '>Specification</div>
-                                    <div className='flex flex-col mt-3 text-[13px] space-y-3'>
+                                    <div className='flex flex-col mt-3 text-[13px] space-y-3 specificatjion'>
                                         <div className='flex'>
                                             <span className='font-semibold'>Brand :</span>
                                             <span> {productItem.Brand}</span>
@@ -164,8 +164,8 @@ const Detail = ({ ProductInfo, addToCart, saveTLS }) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='w-[35vw]'>
-                                    <img className='w-96' src={productItem.url} alt="" id='main-img'/>
+                                <div className='w-[35vw] detail-img'>
+                                    <img className='w-96 main-img' src={productItem.url} alt=""/>
                                 </div>
                             </div>
                             <div>

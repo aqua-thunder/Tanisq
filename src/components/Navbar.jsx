@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 const Navbar = ({ count }) => {
     const JwelleryTable = () => {
         const element = document.getElementById('All-JEWELLERY')
-
         if (element) {
             element.style.width = "50vw"
             element.style.minHeight = "50vh"
@@ -43,7 +42,7 @@ const Navbar = ({ count }) => {
         }
     }
 
-    return (
+    return ( 
         <div id='navbar'>
             <div className="bg-[#f2e9e9] px-28 sticky top-0 z-10">
                 <Filter />
