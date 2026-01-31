@@ -11,50 +11,7 @@ div>h1,
 
 @media (max-width: 900px) {
   #product-detail {
-    width: 186vw;
-    /* font-size: large; */
-  }
-  #main-div {
-    padding: 10px 30px;
-  }
-  
-  .main-img{
-    display: block;
-    max-width: 100%;
-    margin: auto;
-  }
-  #w-full .fontsize{
-    font-size: 28px;
-  }
-  .sub-img{
-    display: none;
-  }
-  #grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10vw;
-  }
-  #grid>div{
     width: 100%;
-  }
-  #term-condition{
-    width: 100%;
-    font-size: small;
-  }
-  .btn{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  #detail{
-    width: 186vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  #detail .specificatjion{
-    font-size: larger;
-  }
-  #detail .detail-img{
-    width: 68vw;
+    overflow-x: hidden;
   }
 }

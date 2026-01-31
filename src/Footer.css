@@ -1,19 +1,12 @@
-ul{
+ul {
     font-family: "Roboto", sans-serif;
     /* font-family: "Merienda", cursive;       */
 }
 
 @media (max-width: 800px) {
-    #footer{
-        width: 186vw;
-    }   
-    #footer>div{
-                display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10vw;
-
-    } 
-    #contact{
-        display: none;
-    } 
+    #footer {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

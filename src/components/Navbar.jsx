@@ -42,48 +42,48 @@ const Navbar = ({ count }) => {
         }
     }
 
-    return ( 
-        <div id='navbar'>
-            <div className="bg-[#f2e9e9] px-28 sticky top-0 z-10">
+    return (
+        <div id='navbar' className='relative z-50'>
+            <div className="bg-[#f2e9e9] px-4 md:px-10 lg:px-28 sticky top-0 z-50 shadow-sm">
                 <Filter />
-                <div className='py-3 flex items-center justify-center space-x-10 '>
-                    <img className='w-20 cursor-pointer' src="../images/logo.svg" alt="" />
-                    <div className='flex  bg-white rounded-sm px-2 h-10' id="search">
-                        <input type="text" className=' w-[45vw] pl-3 outline-none'  placeholder='Search for Gold Jewellery, Diamond Jewellery and more…' />
-                        <div className='flex space-x-3 cursor-pointer px-2'>
-                            <img className='w-6' src="../images/camera-com.svg" alt="" />
-                            <img className='w-5' src="../images/microphone-com.svg" alt="" />
-                            <img className='w-6' src="../images/search-com.svg" alt="" />
+                <div className='py-3 flex items-center justify-between lg:justify-center gap-4 md:gap-10 '>
+                    <Link to="/"><img className='w-16 md:w-20 cursor-pointer' src="../images/logo.svg" alt="Tanishq Logo" /></Link>
+                    <div className='hidden md:flex flex-1 max-w-2xl bg-white rounded-md px-2 h-10 items-center' id="search">
+                        <input type="text" className='flex-1 pl-3 outline-none text-sm' placeholder='Search for Gold Jewellery, Diamond Jewellery and more…' />
+                        <div className='flex space-x-3 cursor-pointer px-2 items-center'>
+                            <img className='w-5 md:w-6' src="../images/camera-com.svg" alt="" />
+                            <img className='w-4 md:w-5' src="../images/microphone-com.svg" alt="" />
+                            <img className='w-5 md:w-6' src="../images/search-com.svg" alt="" />
                         </div>
-
                     </div>
-                    <div className='flex space-x-10' >
-                        <div className='flex flex-col justify-center items-center cursor-pointer '>
-                            <img className='w-6 ' src="../images/diemond.svg" alt="" />
-                            <span className='text-[13px] text-[#a73f29] hover:text-[14px] hover:font-semibold transition-all'>DIAMOND</span>
+                    <div className='flex items-center space-x-3 md:space-x-6 lg:space-x-10' >
+                        <div className='hidden sm:flex flex-col justify-center items-center cursor-pointer group'>
+                            <img className='w-5 md:w-6 transition-transform group-hover:scale-110' src="../images/diemond.svg" alt="" />
+                            <span className='text-[10px] md:text-[13px] text-[#a73f29] group-hover:font-semibold transition-all uppercase'>DIAMOND</span>
                         </div>
-                        <div className='flex flex-col justify-center items-center space-y-1 cursor-pointer'>
-                            <img className='w-5' src="../images/store-com.svg" alt="" />
-                            <span className='text-[13px] text-[#a73f29] hover:text-[14px] hover:font-semibold transition-all'>STORES</span>
+                        <div className='hidden sm:flex flex-col justify-center items-center space-y-1 cursor-pointer group'>
+                            <img className='w-4 md:w-5 transition-transform group-hover:scale-110' src="../images/store-com.svg" alt="" />
+                            <span className='text-[10px] md:text-[13px] text-[#a73f29] group-hover:font-semibold transition-all uppercase'>STORES</span>
                         </div>
-                        <div className='flex flex-col justify-center items-center cursor-pointer'>
-                            <img className='w-7' src="../images/account-com.svg" alt="" />
-                            <span className='text-[13px] text-[#a73f29] hover:text-[14px] hover:font-semibold transition-all'>ACCOUNT</span>
+                        <div className='flex flex-col justify-center items-center cursor-pointer group'>
+                            <img className='w-5 md:w-7 transition-transform group-hover:scale-110' src="../images/account-com.svg" alt="" />
+                            <span className='text-[10px] md:text-[13px] text-[#a73f29] group-hover:font-semibold transition-all uppercase'>ACCOUNT</span>
                         </div>
-                        <div className='flex flex-col justify-center items-center cursor-pointer space-y-2'>
-                            <img className='w-5 ' src="../images/heart-navigation-com.svg" alt="" />
-                            <span className='text-[13px] text-[#a73f29] hover:text-[14px] hover:font-semibold transition-all '>WISHLIST</span>
+                        <div className='hidden sm:flex flex-col justify-center items-center cursor-pointer space-y-2 group'>
+                            <img className='w-4 md:w-5 transition-transform group-hover:scale-110' src="../images/heart-navigation-com.svg" alt="" />
+                            <span className='text-[10px] md:text-[13px] text-[#a73f29] group-hover:font-semibold transition-all uppercase'>WISHLIST</span>
                         </div>
-                        <Link to="/cart">
-                            <div className='justify-center items-center  cursor-pointer'>
-                                <div className='flex flex-col absolute space-y-1'>
-                                    <img className='w-6' src="../images/cart-shopping-com.svg" alt="" />
-                                    <span className='text-[13px] text-[#a73f29] hover:text-[14px] hover:font-semibold transition-all'>CART</span>
-                                </div>
-                                <span className='relative top-[-10px] left-6 bg-[#a73f29] py-1 px-2 text-[12px] rounded-full text-white'>{count}</span>
+                        <Link to="/cart" className='relative group'>
+                            <div className='flex flex-col items-center cursor-pointer'>
+                                <img className='w-5 md:w-6 transition-transform group-hover:scale-110' src="../images/cart-shopping-com.svg" alt="" />
+                                <span className='text-[10px] md:text-[13px] text-[#a73f29] group-hover:font-semibold transition-all uppercase'>CART</span>
                             </div>
+                            {count > 0 && (
+                                <span className='absolute -top-2 -right-2 bg-[#a73f29] min-w-[18px] h-[18px] flex items-center justify-center px-1 text-[10px] rounded-full text-white font-bold border-2 border-[#f2e9e9]'>
+                                    {count}
+                                </span>
+                            )}
                         </Link>
-
                     </div>
                 </div>
             </div>

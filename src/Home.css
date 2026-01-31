@@ -16,17 +16,24 @@
 
 @media (max-width: 800px) {
     #home {
-        width: 186vw;
-        padding: 28px 30px 28px 30px;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
   
-    #home #text-lg{
-        font-size: 20px
+    #home #text-lg {
+        font-size: 1.5rem;
     }
 
     #all-jewellery {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 9;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #all-jewellery {
+        grid-template-columns: 1fr;
     }
 }

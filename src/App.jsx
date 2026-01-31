@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Footer from './components/Footer'
 import Detail from './components/Detail'
 import Cart from './components/Cart'
+import ScrollToTop from './components/ScrollToTop'
 import { createBrowserRouter, json, RouterProvider } from 'react-router-dom'
 
 
@@ -220,15 +221,15 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <><Navbar count={AddCart.length} /><Home product={product} productDetail={productDetail} /></>
+      element: <><ScrollToTop /><Navbar count={AddCart.length} /><Home product={product} productDetail={productDetail} /></>
     },
     {
       path: "/detail",
-      element: <><Navbar count={AddCart.length} /><Detail ProductInfo={ProductInfo} addToCart={addToCart} saveTLS={saveTLS} /></>
+      element: <><ScrollToTop /><Navbar count={AddCart.length} /><Detail ProductInfo={ProductInfo} addToCart={addToCart} saveTLS={saveTLS} /></>
     },
     {
       path: "/cart",
-      element: <><Navbar count={AddCart.length} /><Cart AddCart={AddCart} saveTLS={saveTLS} /></>
+      element: <><ScrollToTop /><Navbar count={AddCart.length} /><Cart AddCart={AddCart} saveTLS={saveTLS} /></>
     },
   ])
 
